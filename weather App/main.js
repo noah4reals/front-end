@@ -8,7 +8,7 @@ const cityName = document.querySelector('.city-name');
 search.addEventListener('click', () => {
 
 
-    const APIKey = 'c372ca9f8511a14c224711974ece2966';
+    const APIKey = 'API key';
     const city = document.querySelector('.search-bar input').value;
 
     if (city === '') 
