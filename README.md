@@ -1,1 +1,2 @@
-# Frontend project i practice my knowledge on
+# Frontend projects i practice my knowledge on.
+I use html/Css/JavaScript in here
