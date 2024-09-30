@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h2 class="h2-s"><img src="icons/todo.svg" width="30px"> ToDo List</h2>
+        <div class="task-input">
+            <input type="text" id="task-name" placeholder="Task Name" autofocus>
+            <textarea id="task-detail" placeholder="Task Detail"></textarea>
+            <button id="add-task" onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Task Detail Modal -->
+    <div id="task-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="back-arrow" onclick="closeModal()">
+                <i class="fas fa-arrow-left"></i> Back
+            </span>
+            <h3 id="modal-task-name"></h3>
+            <p id="task-detail-text"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
